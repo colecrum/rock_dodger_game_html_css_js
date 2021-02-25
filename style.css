@@ -1,3 +1,13 @@
+html, body {
+  overflow-x: hidden;
+}
+
+body {
+  position: relative;
+  text-align: center;
+}
+
+/* Game -------------------------------------------- */
 #dodger {
   background-color: white;
   height: 20px;
@@ -54,23 +64,48 @@
   width: 9px;
 }
 
+#disclaimer-header {
+  font-weight: bold;
+  padding-top: 5px;
+}
+
+@media screen and (min-width: 600px) {
+  #disclaimer {
+    display: none;
+  }
+}
+
+/* SIGN-OFF --------------------------------------------*/
+
+/*designed by & contact*/
 #contact-section {
   color: black;
   text-align: center;
+  min-height: 33vh;
 }
 
 .contact-links {
   height: auto;
-  width: 100%;
+  width: 25%;
+  display: inline-block;
+  padding: 20px;
+}
+
+.link-cont {
+  float: left;
+  width: 25%;
 }
 
 .contact-img {
   height: 75px;
   width: 75px;
-  padding: 25px;
 }
 
 #git-logo {
   height: 75px;
-  width: 125px;
+  width: 100px;
+}
+
+@media only screen and (max-width: 600px) {
+  .contact-links {width: 100%;}
 }
